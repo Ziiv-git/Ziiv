@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scrapping on Z!!V | Data Science Portfolio</title>
+    <link>https://ziiv-git.github.io/Ziiv/categories/scrapping/</link>
+    <description>Recent content in Scrapping on Z!!V | Data Science Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <lastBuildDate>Tue, 30 Mar 2021 11:13:32 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/scrapping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Scrapping</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-4/</link>
+      <pubDate>Tue, 30 Mar 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-4/</guid>
+      <description>Purpose of the project was to scrap various sites using various libraries.</description>
+    </item>
+    
+    <item>
+      <title>Air Pollution</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-2/</link>
+      <pubDate>Wed, 17 Mar 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-2/</guid>
+      <description>Purpose of the project was to predict the air quality of Bengaluru city based on the data which was scrapped from the multiple sites and later after processing it was converted into a csv file using BeautifulSoup.</description>
+    </item>
+    
+  </channel>
+</rss>

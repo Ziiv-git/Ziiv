@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on Z!!V | Data Science Portfolio</title>
+    <link>https://ziiv-git.github.io/Ziiv/categories/ml/</link>
+    <description>Recent content in ML on Z!!V | Data Science Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <lastBuildDate>Sun, 06 Jun 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/ml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IRIS</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-16/</link>
+      <pubDate>Sun, 06 Jun 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-16/</guid>
+      <description>Project done while being an internee @ The Sparks Foundation</description>
+    </item>
+    
+    <item>
+      <title>Perrin Freres Monthly Champagne Sales</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-13/</link>
+      <pubDate>Wed, 26 May 2021 11:25:05 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-13/</guid>
+      <description>Build the model based on ARIMA &amp;amp; SARIMA algorithms to forecast monthly sales of Champagne, as due to seasonality captured in the dataset SARIMA performed better.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Automation</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-11/</link>
+      <pubDate>Sat, 22 May 2021 11:25:05 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-11/</guid>
+      <description>Build a webapp using streamit and deployed on stramlit.</description>
+    </item>
+    
+    <item>
+      <title>Cryptocurrency EDA</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-10/</link>
+      <pubDate>Thu, 20 May 2021 11:25:05 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-10/</guid>
+      <description>Build a webapp using streamit and deployed on heroku, used python and other important scikit libraries.</description>
+    </item>
+    
+    <item>
+      <title>Flight Price Prediction</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-9/</link>
+      <pubDate>Wed, 19 May 2021 11:25:05 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-9/</guid>
+      <description>Curated data using firstly with automated analysing and based on that manually cleaned the data.</description>
+    </item>
+    
+    <item>
+      <title>Credit Card Lead Generation</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-8/</link>
+      <pubDate>Sun, 16 May 2021 11:25:05 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-8/</guid>
+      <description>Identifying customers that could show higher intent towards a recommended credit card.</description>
+    </item>
+    
+    <item>
+      <title>Zomato Rating Prediction</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-5/</link>
+      <pubDate>Mon, 12 Apr 2021 11:14:48 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-5/</guid>
+      <description>Perform extensive Exploratory Data Analysis(EDA) on the Zomato Dataset which will be described as below as you scroll down.</description>
+    </item>
+    
+    <item>
+      <title>Bank Note Authentication</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-3/</link>
+      <pubDate>Sun, 21 Mar 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-3/</guid>
+      <description>Purpose of the project was to predict the whether the bank notes were authenticate or they are fake.</description>
+    </item>
+    
+    <item>
+      <title>Air Pollution</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-2/</link>
+      <pubDate>Wed, 17 Mar 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-2/</guid>
+      <description>Purpose of the project was to predict the air quality of Bengaluru city based on the data which was scrapped from the multiple sites and later after processing it was converted into a csv file using BeautifulSoup.</description>
+    </item>
+    
+    <item>
+      <title>Out Of Office</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-1/</link>
+      <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-1/</guid>
+      <description>The purpose of the project was to predict based on the data whether an employee is going to be absent or not, on their daily work routine.</description>
+    </item>
+    
+  </channel>
+</rss>

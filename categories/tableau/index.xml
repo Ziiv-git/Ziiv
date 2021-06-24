@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tableau on Z!!V | Data Science Portfolio</title>
+    <link>https://ziiv-git.github.io/Ziiv/categories/tableau/</link>
+    <description>Recent content in Tableau on Z!!V | Data Science Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <lastBuildDate>Sun, 06 Jun 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/tableau/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>COVID-19</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-15/</link>
+      <pubDate>Sun, 06 Jun 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-15/</guid>
+      <description>Perform analysis on the dataset and plot various insights revealing graphs using Tableau, animations have been applied to see how and which countries were affected by the virus.</description>
+    </item>
+    
+    <item>
+      <title>FDI Inflows</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-7/</link>
+      <pubDate>Thu, 13 May 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-7/</guid>
+      <description>Perform analysis on the dataset and plot various insights revealing graphs using Tableau, unpivoting data from converting wide format to long format, cleaned labels.</description>
+    </item>
+    
+    <item>
+      <title>Bank Customer Baseline</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-6/</link>
+      <pubDate>Wed, 12 May 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-6/</guid>
+      <description>Perform analysis on the dataset and plot various insights revealing graphs using Tableau.</description>
+    </item>
+    
+    <item>
+      <title>Out Of Office</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-1/</link>
+      <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-1/</guid>
+      <description>The purpose of the project was to predict based on the data whether an employee is going to be absent or not, on their daily work routine.</description>
+    </item>
+    
+  </channel>
+</rss>
