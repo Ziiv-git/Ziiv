@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Sun, 06 Jun 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Jun 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Data Exploration</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-17/</link>
+      <pubDate>Mon, 28 Jun 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-17/</guid>
+      <description>Project done while learning with the help from Alex The Analyst</description>
+    </item>
+    
     <item>
       <title>COVID-19</title>
       <link>https://ziiv-git.github.io/Ziiv/portfolio/project-15/</link>
