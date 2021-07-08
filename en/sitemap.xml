@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ziiv-git.github.io/Ziiv/categories/</loc>
-    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
+    <lastmod>2021-07-04T11:15:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -15,20 +15,17 @@
                 href="https://ziiv-git.github.io/Ziiv/categories/"
                 />
   </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/forecasting/</loc>
+    <lastmod>2021-07-04T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-20/</loc>
+    <lastmod>2021-07-04T11:15:58-04:00</lastmod>
+  </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/portfolio/</loc>
-    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
-  </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-18/</loc>
-    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
-  </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/categories/sql/</loc>
-    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
-  </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/categories/tableau/</loc>
-    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
+    <lastmod>2021-07-04T11:15:58-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/</loc>
-    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
+    <lastmod>2021-07-04T11:15:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -39,6 +36,24 @@
                 hreflang="en"
                 href="https://ziiv-git.github.io/Ziiv/"
                 />
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-19/</loc>
+    <lastmod>2021-07-02T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/scala/</loc>
+    <lastmod>2021-07-02T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/spark/</loc>
+    <lastmod>2021-07-02T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-18/</loc>
+    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/sql/</loc>
+    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/tableau/</loc>
+    <lastmod>2021-06-29T11:15:58-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-17/</loc>
     <lastmod>2021-06-28T11:15:58-04:00</lastmod>
@@ -63,9 +78,6 @@
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/categories/nlp/</loc>
     <lastmod>2021-05-29T11:25:05-04:00</lastmod>
-  </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/categories/forecasting/</loc>
-    <lastmod>2021-05-26T11:25:05-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-13/</loc>
     <lastmod>2021-05-26T11:25:05-04:00</lastmod>
