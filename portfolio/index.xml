@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Sun, 04 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Startup Quadrant</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-21/</link>
+      <pubDate>Wed, 07 Jul 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-21/</guid>
+      <description>Problem statement:
+ A Venture Capital Fund company approaches via Board of Directors who are currently reviewing 1000 potentially interesting startups and deciding on which ones they are going to invest in.</description>
+    </item>
+    
     <item>
       <title>Forecasting</title>
       <link>https://ziiv-git.github.io/Ziiv/portfolio/project-20/</link>

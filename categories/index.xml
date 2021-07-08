@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Sun, 04 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tableau</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/tableau/</link>
+      <pubDate>Wed, 07 Jul 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/categories/tableau/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Forecasting</title>
       <link>https://ziiv-git.github.io/Ziiv/categories/forecasting/</link>
@@ -41,15 +50,6 @@
       <pubDate>Tue, 29 Jun 2021 11:15:58 -0400</pubDate>
       
       <guid>https://ziiv-git.github.io/Ziiv/categories/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tableau</title>
-      <link>https://ziiv-git.github.io/Ziiv/categories/tableau/</link>
-      <pubDate>Tue, 29 Jun 2021 11:15:58 -0400</pubDate>
-      
-      <guid>https://ziiv-git.github.io/Ziiv/categories/tableau/</guid>
       <description></description>
     </item>
     
