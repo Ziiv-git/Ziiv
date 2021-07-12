@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Wed, 07 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NLP</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/nlp/</link>
+      <pubDate>Fri, 09 Jul 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/categories/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/visualization/</link>
+      <pubDate>Fri, 09 Jul 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/categories/visualization/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Tableau</title>
       <link>https://ziiv-git.github.io/Ziiv/categories/tableau/</link>
@@ -68,24 +86,6 @@
       <pubDate>Sun, 06 Jun 2021 11:15:58 -0400</pubDate>
       
       <guid>https://ziiv-git.github.io/Ziiv/categories/video/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visualization</title>
-      <link>https://ziiv-git.github.io/Ziiv/categories/visualization/</link>
-      <pubDate>Sun, 06 Jun 2021 11:15:58 -0400</pubDate>
-      
-      <guid>https://ziiv-git.github.io/Ziiv/categories/visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>https://ziiv-git.github.io/Ziiv/categories/nlp/</link>
-      <pubDate>Sat, 29 May 2021 11:25:05 -0400</pubDate>
-      
-      <guid>https://ziiv-git.github.io/Ziiv/categories/nlp/</guid>
       <description></description>
     </item>
     
