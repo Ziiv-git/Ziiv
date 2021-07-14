@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excel on Z!!V | Data Science Portfolio</title>
+    <link>https://ziiv-git.github.io/Ziiv/categories/excel/</link>
+    <description>Recent content in Excel on Z!!V | Data Science Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <lastBuildDate>Mon, 12 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HR Analytics</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-24/</link>
+      <pubDate>Mon, 12 Jul 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-24/</guid>
+      <description>Objective:
+ Identifying, classifying and quantifying the productivity of emplopyees. Calculate ROI of emplopyee initiatives Helps in supporting the business decisions with the backing of data.</description>
+    </item>
+    
+  </channel>
+</rss>

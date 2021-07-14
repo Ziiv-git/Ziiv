@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ziiv-git.github.io/Ziiv/categories/</loc>
-    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+    <lastmod>2021-07-12T11:15:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -15,17 +15,20 @@
                 href="https://ziiv-git.github.io/Ziiv/categories/"
                 />
   </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/categories/computer-vision/</loc>
-    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/excel/</loc>
+    <lastmod>2021-07-12T11:15:58-04:00</lastmod>
   </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-23/</loc>
-    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-24/</loc>
+    <lastmod>2021-07-12T11:15:58-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/portfolio/</loc>
-    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+    <lastmod>2021-07-12T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/visualization/</loc>
+    <lastmod>2021-07-12T11:15:58-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/</loc>
-    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+    <lastmod>2021-07-12T11:15:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -37,13 +40,16 @@
                 href="https://ziiv-git.github.io/Ziiv/"
                 />
   </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/categories/computer-vision/</loc>
+    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+  </url><url>
+    <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-23/</loc>
+    <lastmod>2021-07-11T11:15:58-04:00</lastmod>
+  </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/categories/nlp/</loc>
     <lastmod>2021-07-09T11:15:58-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/portfolio/project-22/</loc>
-    <lastmod>2021-07-09T11:15:58-04:00</lastmod>
-  </url><url>
-    <loc>https://ziiv-git.github.io/Ziiv/categories/visualization/</loc>
     <lastmod>2021-07-09T11:15:58-04:00</lastmod>
   </url><url>
     <loc>https://ziiv-git.github.io/Ziiv/categories/tableau/</loc>
