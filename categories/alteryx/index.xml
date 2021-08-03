@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alteryx on Z!!V | Data Science Portfolio</title>
+    <link>https://ziiv-git.github.io/Ziiv/categories/alteryx/</link>
+    <description>Recent content in Alteryx on Z!!V | Data Science Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <lastBuildDate>Mon, 02 Aug 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/alteryx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales analysis</title>
+      <link>https://ziiv-git.github.io/Ziiv/portfolio/project-27/</link>
+      <pubDate>Mon, 02 Aug 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/portfolio/project-27/</guid>
+      <description>Challenge:
+ To derive insights from furniture sales data to help management in taking profitable business decisions.</description>
+    </item>
+    
+  </channel>
+</rss>

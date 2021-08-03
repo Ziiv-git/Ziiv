@@ -7,22 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Wed, 28 Jul 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Clustering</title>
-      <link>https://ziiv-git.github.io/Ziiv/categories/clustering/</link>
-      <pubDate>Wed, 28 Jul 2021 11:15:58 -0400</pubDate>
+      <title>Alteryx</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/alteryx/</link>
+      <pubDate>Mon, 02 Aug 2021 11:15:58 -0400</pubDate>
       
-      <guid>https://ziiv-git.github.io/Ziiv/categories/clustering/</guid>
+      <guid>https://ziiv-git.github.io/Ziiv/categories/alteryx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualization</title>
       <link>https://ziiv-git.github.io/Ziiv/categories/visualization/</link>
-      <pubDate>Wed, 28 Jul 2021 11:15:58 -0400</pubDate>
+      <pubDate>Mon, 02 Aug 2021 11:15:58 -0400</pubDate>
       
       <guid>https://ziiv-git.github.io/Ziiv/categories/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/clustering/</link>
+      <pubDate>Wed, 28 Jul 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/categories/clustering/</guid>
       <description></description>
     </item>
     
