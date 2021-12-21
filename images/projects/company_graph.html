@@ -1,0 +1,116 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 700px;
+            height: 700px;
+            background-color: black;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": {"color": "white"}, "id": "root", "label": "root", "shape": "dot", "size": 10}, {"color": "#3449eb", "font": {"color": "white"}, "id": "India", "label": "India", "shape": "dot", "size": 26, "title": "\u003cb\u003eIndia\u003c/b\u003e - 13\u003cul\u003e\u003cli\u003eSenior Data Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Accenture", "label": "Accenture", "shape": "dot", "size": 26, "title": "\u003cb\u003eAccenture\u003c/b\u003e - 13\u003cul\u003e\u003cli\u003eSenior Data Analyst\u003c/li\u003e\u003cli\u003eML Ops\u003c/li\u003e\u003cli\u003eApplication Development Analyst - DA \u0026 NLP\u003c/li\u003e\u003cli\u003eRecruitment Specialist\u003c/li\u003e\u003cli\u003eAnalytics Associate Manager\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003cli\u003eData Science Analyst\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eData Science Consultant\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "The Sparks Foundation", "label": "The Sparks Foundation", "shape": "dot", "size": 16, "title": "\u003cb\u003eThe Sparks Foundation\u003c/b\u003e - 8\u003cul\u003e\u003cli\u003eData Science Intern\u003c/li\u003e\u003cli\u003eData Science \u0026 Business Analytics \u003c/li\u003e\u003cli\u003eBusiness Analyst \u003c/li\u003e\u003cli\u003eData Science and Business Anal\u003c/li\u003e\u003cli\u003eHuman Resources Executive\u003c/li\u003e\u003cli\u003eData Science \u0026 Business Analyst Intern\u003c/li\u003e\u003cli\u003eData Science and Business Analytics Intern\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Tata Consultancy Services", "label": "Tata Consultancy Services", "shape": "dot", "size": 16, "title": "\u003cb\u003eTata Consultancy Services\u003c/b\u003e - 8\u003cul\u003e\u003cli\u003ePython developer \u003c/li\u003e\u003cli\u003eAssistant System Engineer\u003c/li\u003e\u003cli\u003eData Analyst (Tableau Developer)\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003cli\u003eAssistant System Engineer \u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eBusiness Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "vCreaTek Consulting Services Pvt Ltd", "label": "vCreaTek Consulting Services Pvt Ltd", "shape": "dot", "size": 12, "title": "\u003cb\u003evCreaTek Consulting Services Pvt Ltd\u003c/b\u003e - 6\u003cul\u003e\u003cli\u003eResearch Scientist\u003c/li\u003e\u003cli\u003eSr.Data Analyst\u003c/li\u003e\u003cli\u003eSQL/Python Developer\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eAngular .Net Full Stack Developer\u003c/li\u003e\u003cli\u003eSenior Executive\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Johnson \u0026 Johnson", "label": "Johnson \u0026 Johnson", "shape": "dot", "size": 12, "title": "\u003cb\u003eJohnson \u0026 Johnson\u003c/b\u003e - 6\u003cul\u003e\u003cli\u003eTechnical Consultant (Data and Visualization)\u003c/li\u003e\u003cli\u003eSenior Data Engineer\u003c/li\u003e\u003cli\u003eData Engineer\u003c/li\u003e\u003cli\u003eConsultant - Data Analyst \u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Capgemini", "label": "Capgemini", "shape": "dot", "size": 12, "title": "\u003cb\u003eCapgemini\u003c/b\u003e - 6\u003cul\u003e\u003cli\u003eSoftware Engineer / Analyst \u003c/li\u003e\u003cli\u003eSenior Data Scientist\u003c/li\u003e\u003cli\u003eSenior Associate Engineer\u003c/li\u003e\u003cli\u003eAnalyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Wipro", "label": "Wipro", "shape": "dot", "size": 12, "title": "\u003cb\u003eWipro\u003c/b\u003e - 6\u003cul\u003e\u003cli\u003eML developer\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eHMI Developer - iX Research\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Infosys Ltd", "label": "Infosys Ltd", "shape": "dot", "size": 12, "title": "\u003cb\u003eInfosys Ltd\u003c/b\u003e - 6\u003cul\u003e\u003cli\u003eSystem Engineer\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Flipkart", "label": "Flipkart", "shape": "dot", "size": 12, "title": "\u003cb\u003eFlipkart\u003c/b\u003e - 6\u003cul\u003e\u003cli\u003eTalent Acquisition\u003c/li\u003e\u003cli\u003eHR Executive\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Mu Sigma Inc.", "label": "Mu Sigma Inc.", "shape": "dot", "size": 10, "title": "\u003cb\u003eMu Sigma Inc.\u003c/b\u003e - 5\u003cul\u003e\u003cli\u003eLead Data Scientist ( Trainee Decision Scientist - Level 2 )\u003c/li\u003e\u003cli\u003eDecision scientist\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eDecision Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": " -", "label": " -", "shape": "dot", "size": 8, "title": "\u003cb\u003e -\u003c/b\u003e - 4\u003cul\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eHR\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Cognizant", "label": "Cognizant", "shape": "dot", "size": 8, "title": "\u003cb\u003eCognizant\u003c/b\u003e - 4\u003cul\u003e\u003cli\u003eProgramming Analyst\u003c/li\u003e\u003cli\u003eSr. Data Scientist \u003c/li\u003e\u003cli\u003eAssociate Software Engineer\u003c/li\u003e\u003cli\u003eSenior Associate\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Deloitte India (Offices of the US)", "label": "Deloitte India (Offices of the US)", "shape": "dot", "size": 8, "title": "\u003cb\u003eDeloitte India (Offices of the US)\u003c/b\u003e - 4\u003cul\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "TheMathCompany", "label": "TheMathCompany", "shape": "dot", "size": 8, "title": "\u003cb\u003eTheMathCompany\u003c/b\u003e - 4\u003cul\u003e\u003cli\u003eData science analyst\u003c/li\u003e\u003cli\u003eAnalyst | Data Science\u003c/li\u003e\u003cli\u003eData Science Associate\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Amazon", "label": "Amazon", "shape": "dot", "size": 8, "title": "\u003cb\u003eAmazon\u003c/b\u003e - 4\u003cul\u003e\u003cli\u003eData Scientist II\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003cli\u003eProject Lead\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Self-employed", "label": "Self-employed", "shape": "dot", "size": 8, "title": "\u003cb\u003eSelf-employed\u003c/b\u003e - 4\u003cul\u003e\u003cli\u003eHead Of Operations\u003c/li\u003e\u003cli\u003ePython Developer\u003c/li\u003e\u003cli\u003eFreelance Developer\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Citi", "label": "Citi", "shape": "dot", "size": 6, "title": "\u003cb\u003eCiti\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eSpec Analytics | C09\u003c/li\u003e\u003cli\u003eData Science Manager\u003c/li\u003e\u003cli\u003eRisk Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Freelance", "label": "Freelance", "shape": "dot", "size": 6, "title": "\u003cb\u003eFreelance\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eRecruitment Consultant\u003c/li\u003e\u003cli\u003eResidential Floor Planner\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Ugam", "label": "Ugam", "shape": "dot", "size": 6, "title": "\u003cb\u003eUgam\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eAnalyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "TEKSystems Global Services ", "label": "TEKSystems Global Services ", "shape": "dot", "size": 6, "title": "\u003cb\u003eTEKSystems Global Services \u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eSoftware Engineer\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "MINDTREE LIMITED", "label": "MINDTREE LIMITED", "shape": "dot", "size": 6, "title": "\u003cb\u003eMINDTREE LIMITED\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eSenior Data Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Ericsson", "label": "Ericsson", "shape": "dot", "size": 6, "title": "\u003cb\u003eEricsson\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eAssistant Engineer\u003c/li\u003e\u003cli\u003eIntern\u003c/li\u003e\u003cli\u003eSolution Architect\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Fedo.ai", "label": "Fedo.ai", "shape": "dot", "size": 6, "title": "\u003cb\u003eFedo.ai\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eData Science and Analytics\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eData Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Impact Analytics", "label": "Impact Analytics", "shape": "dot", "size": 6, "title": "\u003cb\u003eImpact Analytics\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eData Science Lead\u003c/li\u003e\u003cli\u003eSenior Data Scientist\u003c/li\u003e\u003cli\u003eProject Leader\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "INNODATATICS * Innovation | Data | Analytics", "label": "INNODATATICS * Innovation | Data | Analytics", "shape": "dot", "size": 6, "title": "\u003cb\u003eINNODATATICS * Innovation | Data | Analytics\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003eProject Intern\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Parul Institute of Engg. \u0026 Tech. (Under GTU, Ahemdabad) \u0026 Parul University (Faculty of Engg. \u0026 Tech)", "label": "Parul Institute of Engg. \u0026 Tech. (Under GTU, Ahemdabad) \u0026 Parul University (Faculty of Engg. \u0026 Tech)", "shape": "dot", "size": 6, "title": "\u003cb\u003eParul Institute of Engg. \u0026 Tech. (Under GTU, Ahemdabad) \u0026 Parul University (Faculty of Engg. \u0026 Tech)\u003c/b\u003e - 3\u003cul\u003e\u003cli\u003ePG (CSE/IT) Research Guide \u0026 Assistant Professor (I.T Dept.)\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "iNeuron.ai", "label": "iNeuron.ai", "shape": "dot", "size": 4, "title": "\u003cb\u003eiNeuron.ai\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eData Scientist Intern\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "XAMPLAY", "label": "XAMPLAY", "shape": "dot", "size": 4, "title": "\u003cb\u003eXAMPLAY\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eCo-Founder | CTO\u003c/li\u003e\u003cli\u003eCo-Founder at XamPLAY\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "BYJU\u0027S", "label": "BYJU\u0027S", "shape": "dot", "size": 4, "title": "\u003cb\u003eBYJU\u0027S\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eContent Creation Associate\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "ORACLE FINANCIAL SERVICES SOFTWARE LIMITED", "label": "ORACLE FINANCIAL SERVICES SOFTWARE LIMITED", "shape": "dot", "size": 4, "title": "\u003cb\u003eORACLE FINANCIAL SERVICES SOFTWARE LIMITED\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eAssociate Consultant\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Collabera Inc.", "label": "Collabera Inc.", "shape": "dot", "size": 4, "title": "\u003cb\u003eCollabera Inc.\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eSenior Talent Specialist - Full Stack | DevOps / Cloud / AI \u0026 Data\u003c/li\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "HiyaMee", "label": "HiyaMee", "shape": "dot", "size": 4, "title": "\u003cb\u003eHiyaMee\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eCustomer Success Manager\u003c/li\u003e\u003cli\u003eHR Recruiter\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Glance", "label": "Glance", "shape": "dot", "size": 4, "title": "\u003cb\u003eGlance\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eData Scientist I\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "PMC Retail", "label": "PMC Retail", "shape": "dot", "size": 4, "title": "\u003cb\u003ePMC Retail\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eTest Analyst\u003c/li\u003e\u003cli\u003eRecruitment and HR Coordinator \u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Infogain", "label": "Infogain", "shape": "dot", "size": 4, "title": "\u003cb\u003eInfogain\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eSoftware Engineer\u003c/li\u003e\u003cli\u003eConsultant Development\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Quantiphi", "label": "Quantiphi", "shape": "dot", "size": 4, "title": "\u003cb\u003eQuantiphi\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Engineer\u003c/li\u003e\u003cli\u003eLead Business Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "EY", "label": "EY", "shape": "dot", "size": 4, "title": "\u003cb\u003eEY\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eTalent Acquisition Specialist\u003c/li\u003e\u003cli\u003eTechnology Consultant\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Uber", "label": "Uber", "shape": "dot", "size": 4, "title": "\u003cb\u003eUber\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Scientist II, Tech\u003c/li\u003e\u003cli\u003eData Analyst \u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Gramener", "label": "Gramener", "shape": "dot", "size": 4, "title": "\u003cb\u003eGramener\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "ExcelR Solutions", "label": "ExcelR Solutions", "shape": "dot", "size": 4, "title": "\u003cb\u003eExcelR Solutions\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Science\u003c/li\u003e\u003cli\u003eStudent\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "ZS", "label": "ZS", "shape": "dot", "size": 4, "title": "\u003cb\u003eZS\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003cli\u003eBusiness Operations Consultant\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Xceedance", "label": "Xceedance", "shape": "dot", "size": 4, "title": "\u003cb\u003eXceedance\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eVice President, People and Culture \u003c/li\u003e\u003cli\u003eSenior Analyst\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Tech Mahindra", "label": "Tech Mahindra", "shape": "dot", "size": 4, "title": "\u003cb\u003eTech Mahindra\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eSr Data scientist\u003c/li\u003e\u003cli\u003eSoftware Developer\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "KarmaLifeAI", "label": "KarmaLifeAI", "shape": "dot", "size": 4, "title": "\u003cb\u003eKarmaLifeAI\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eData Scientist\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#3449eb", "font": {"color": "white"}, "id": "Wells Fargo", "label": "Wells Fargo", "shape": "dot", "size": 4, "title": "\u003cb\u003eWells Fargo\u003c/b\u003e - 2\u003cul\u003e\u003cli\u003eSenior Data Analyst\u003c/li\u003e\u003cli\u003eSoftware Engineer Sr. Analyst\u003c/li\u003e\u003c/ul\u003e"}]);
+        edges = new vis.DataSet([{"color": "grey", "from": "root", "to": "India", "weight": 1}, {"color": "grey", "from": "root", "to": "Accenture", "weight": 1}, {"color": "grey", "from": "root", "to": "The Sparks Foundation", "weight": 1}, {"color": "grey", "from": "root", "to": "Tata Consultancy Services", "weight": 1}, {"color": "grey", "from": "root", "to": "vCreaTek Consulting Services Pvt Ltd", "weight": 1}, {"color": "grey", "from": "root", "to": "Johnson \u0026 Johnson", "weight": 1}, {"color": "grey", "from": "root", "to": "Capgemini", "weight": 1}, {"color": "grey", "from": "root", "to": "Wipro", "weight": 1}, {"color": "grey", "from": "root", "to": "Infosys Ltd", "weight": 1}, {"color": "grey", "from": "root", "to": "Flipkart", "weight": 1}, {"color": "grey", "from": "root", "to": "Mu Sigma Inc.", "weight": 1}, {"color": "grey", "from": "root", "to": " -", "weight": 1}, {"color": "grey", "from": "root", "to": "Cognizant", "weight": 1}, {"color": "grey", "from": "root", "to": "Deloitte India (Offices of the US)", "weight": 1}, {"color": "grey", "from": "root", "to": "TheMathCompany", "weight": 1}, {"color": "grey", "from": "root", "to": "Amazon", "weight": 1}, {"color": "grey", "from": "root", "to": "Self-employed", "weight": 1}, {"color": "grey", "from": "root", "to": "Citi", "weight": 1}, {"color": "grey", "from": "root", "to": "Freelance", "weight": 1}, {"color": "grey", "from": "root", "to": "Ugam", "weight": 1}, {"color": "grey", "from": "root", "to": "TEKSystems Global Services ", "weight": 1}, {"color": "grey", "from": "root", "to": "MINDTREE LIMITED", "weight": 1}, {"color": "grey", "from": "root", "to": "Ericsson", "weight": 1}, {"color": "grey", "from": "root", "to": "Fedo.ai", "weight": 1}, {"color": "grey", "from": "root", "to": "Impact Analytics", "weight": 1}, {"color": "grey", "from": "root", "to": "INNODATATICS * Innovation | Data | Analytics", "weight": 1}, {"color": "grey", "from": "root", "to": "Parul Institute of Engg. \u0026 Tech. (Under GTU, Ahemdabad) \u0026 Parul University (Faculty of Engg. \u0026 Tech)", "weight": 1}, {"color": "grey", "from": "root", "to": "iNeuron.ai", "weight": 1}, {"color": "grey", "from": "root", "to": "XAMPLAY", "weight": 1}, {"color": "grey", "from": "root", "to": "BYJU\u0027S", "weight": 1}, {"color": "grey", "from": "root", "to": "ORACLE FINANCIAL SERVICES SOFTWARE LIMITED", "weight": 1}, {"color": "grey", "from": "root", "to": "Collabera Inc.", "weight": 1}, {"color": "grey", "from": "root", "to": "HiyaMee", "weight": 1}, {"color": "grey", "from": "root", "to": "Glance", "weight": 1}, {"color": "grey", "from": "root", "to": "PMC Retail", "weight": 1}, {"color": "grey", "from": "root", "to": "Infogain", "weight": 1}, {"color": "grey", "from": "root", "to": "Quantiphi", "weight": 1}, {"color": "grey", "from": "root", "to": "EY", "weight": 1}, {"color": "grey", "from": "root", "to": "Uber", "weight": 1}, {"color": "grey", "from": "root", "to": "Gramener", "weight": 1}, {"color": "grey", "from": "root", "to": "ExcelR Solutions", "weight": 1}, {"color": "grey", "from": "root", "to": "ZS", "weight": 1}, {"color": "grey", "from": "root", "to": "Xceedance", "weight": 1}, {"color": "grey", "from": "root", "to": "Tech Mahindra", "weight": 1}, {"color": "grey", "from": "root", "to": "KarmaLifeAI", "weight": 1}, {"color": "grey", "from": "root", "to": "Wells Fargo", "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "hierarchicalRepulsion": {
+            "centralGravity": 0.0,
+            "damping": 0.09,
+            "nodeDistance": 120,
+            "springConstant": 0.01,
+            "springLength": 100
+        },
+        "solver": "hierarchicalRepulsion",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

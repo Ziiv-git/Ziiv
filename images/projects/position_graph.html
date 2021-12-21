@@ -1,0 +1,116 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 1000px;
+            height: 800px;
+            background-color: black;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "white", "font": {"color": "white"}, "id": "root", "label": "root", "shape": "dot", "size": 10}, {"color": "orange", "font": {"color": "white"}, "id": "Data Scientist", "label": "Data Scientist", "shape": "dot", "size": 114, "title": "\u003cb\u003eData Scientist\u003c/b\u003e - 114"}, {"color": "orange", "font": {"color": "white"}, "id": "Data Analyst", "label": "Data Analyst", "shape": "dot", "size": 100, "title": "\u003cb\u003eData Analyst\u003c/b\u003e - 100"}, {"color": "orange", "font": {"color": "white"}, "id": "HR", "label": "HR", "shape": "dot", "size": 37, "title": "\u003cb\u003eHR\u003c/b\u003e - 37"}, {"color": "orange", "font": {"color": "white"}, "id": "Software Engineer", "label": "Software Engineer", "shape": "dot", "size": 33, "title": "\u003cb\u003eSoftware Engineer\u003c/b\u003e - 33"}, {"color": "orange", "font": {"color": "white"}, "id": "Developers", "label": "Developers", "shape": "dot", "size": 20, "title": "\u003cb\u003eDevelopers\u003c/b\u003e - 20"}, {"color": "orange", "font": {"color": "white"}, "id": "Manager", "label": "Manager", "shape": "dot", "size": 19, "title": "\u003cb\u003eManager\u003c/b\u003e - 19"}, {"color": "orange", "font": {"color": "white"}, "id": "Consultant", "label": "Consultant", "shape": "dot", "size": 14, "title": "\u003cb\u003eConsultant\u003c/b\u003e - 14"}, {"color": "orange", "font": {"color": "white"}, "id": "Talent Acquisition", "label": "Talent Acquisition", "shape": "dot", "size": 11, "title": "\u003cb\u003eTalent Acquisition\u003c/b\u003e - 11"}, {"color": "orange", "font": {"color": "white"}, "id": "Data Engineer", "label": "Data Engineer", "shape": "dot", "size": 10, "title": "\u003cb\u003eData Engineer\u003c/b\u003e - 10"}, {"color": "orange", "font": {"color": "white"}, "id": "Co-Founder", "label": "Co-Founder", "shape": "dot", "size": 10, "title": "\u003cb\u003eCo-Founder\u003c/b\u003e - 10"}, {"color": "orange", "font": {"color": "white"}, "id": "Senior Analyst", "label": "Senior Analyst", "shape": "dot", "size": 10, "title": "\u003cb\u003eSenior Analyst\u003c/b\u003e - 10"}, {"color": "orange", "font": {"color": "white"}, "id": "Recruitment", "label": "Recruitment", "shape": "dot", "size": 10, "title": "\u003cb\u003eRecruitment\u003c/b\u003e - 10"}, {"color": "orange", "font": {"color": "white"}, "id": "Content Creation Associate", "label": "Content Creation Associate", "shape": "dot", "size": 8, "title": "\u003cb\u003eContent Creation Associate\u003c/b\u003e - 8"}, {"color": "orange", "font": {"color": "white"}, "id": "Team Lead", "label": "Team Lead", "shape": "dot", "size": 5, "title": "\u003cb\u003eTeam Lead\u003c/b\u003e - 5"}, {"color": "orange", "font": {"color": "white"}, "id": "Machine Learning Engineer", "label": "Machine Learning Engineer", "shape": "dot", "size": 5, "title": "\u003cb\u003eMachine Learning Engineer\u003c/b\u003e - 5"}, {"color": "orange", "font": {"color": "white"}, "id": "System Engineer", "label": "System Engineer", "shape": "dot", "size": 4, "title": "\u003cb\u003eSystem Engineer\u003c/b\u003e - 4"}, {"color": "orange", "font": {"color": "white"}, "id": "Executive Director", "label": "Executive Director", "shape": "dot", "size": 4, "title": "\u003cb\u003eExecutive Director\u003c/b\u003e - 4"}, {"color": "orange", "font": {"color": "white"}, "id": "Machine Learning Intern", "label": "Machine Learning Intern", "shape": "dot", "size": 4, "title": "\u003cb\u003eMachine Learning Intern\u003c/b\u003e - 4"}, {"color": "orange", "font": {"color": "white"}, "id": "Student", "label": "Student", "shape": "dot", "size": 4, "title": "\u003cb\u003eStudent\u003c/b\u003e - 4"}, {"color": "orange", "font": {"color": "white"}, "id": "Senior Research Associate", "label": "Senior Research Associate", "shape": "dot", "size": 3, "title": "\u003cb\u003eSenior Research Associate\u003c/b\u003e - 3"}, {"color": "orange", "font": {"color": "white"}, "id": "Head of Operations", "label": "Head of Operations", "shape": "dot", "size": 2, "title": "\u003cb\u003eHead of Operations\u003c/b\u003e - 2"}, {"color": "orange", "font": {"color": "white"}, "id": "Graphic Designer", "label": "Graphic Designer", "shape": "dot", "size": 2, "title": "\u003cb\u003eGraphic Designer\u003c/b\u003e - 2"}, {"color": "orange", "font": {"color": "white"}, "id": "Senior Executive", "label": "Senior Executive", "shape": "dot", "size": 2, "title": "\u003cb\u003eSenior Executive\u003c/b\u003e - 2"}, {"color": "orange", "font": {"color": "white"}, "id": "Assistant Professor (Sr.)", "label": "Assistant Professor (Sr.)", "shape": "dot", "size": 2, "title": "\u003cb\u003eAssistant Professor (Sr.)\u003c/b\u003e - 2"}, {"color": "orange", "font": {"color": "white"}, "id": "Senior Quality Assurance Engineer", "label": "Senior Quality Assurance Engineer", "shape": "dot", "size": 2, "title": "\u003cb\u003eSenior Quality Assurance Engineer\u003c/b\u003e - 2"}, {"color": "orange", "font": {"color": "white"}, "id": "Product Analyst", "label": "Product Analyst", "shape": "dot", "size": 2, "title": "\u003cb\u003eProduct Analyst\u003c/b\u003e - 2"}, {"color": "orange", "font": {"color": "white"}, "id": "Digital Marketing Executive", "label": "Digital Marketing Executive", "shape": "dot", "size": 2, "title": "\u003cb\u003eDigital Marketing Executive\u003c/b\u003e - 2"}]);
+        edges = new vis.DataSet([{"color": "grey", "from": "root", "to": "Data Scientist", "weight": 1}, {"color": "grey", "from": "root", "to": "Data Analyst", "weight": 1}, {"color": "grey", "from": "root", "to": "HR", "weight": 1}, {"color": "grey", "from": "root", "to": "Software Engineer", "weight": 1}, {"color": "grey", "from": "root", "to": "Developers", "weight": 1}, {"color": "grey", "from": "root", "to": "Manager", "weight": 1}, {"color": "grey", "from": "root", "to": "Consultant", "weight": 1}, {"color": "grey", "from": "root", "to": "Talent Acquisition", "weight": 1}, {"color": "grey", "from": "root", "to": "Data Engineer", "weight": 1}, {"color": "grey", "from": "root", "to": "Co-Founder", "weight": 1}, {"color": "grey", "from": "root", "to": "Senior Analyst", "weight": 1}, {"color": "grey", "from": "root", "to": "Recruitment", "weight": 1}, {"color": "grey", "from": "root", "to": "Content Creation Associate", "weight": 1}, {"color": "grey", "from": "root", "to": "Team Lead", "weight": 1}, {"color": "grey", "from": "root", "to": "Machine Learning Engineer", "weight": 1}, {"color": "grey", "from": "root", "to": "System Engineer", "weight": 1}, {"color": "grey", "from": "root", "to": "Executive Director", "weight": 1}, {"color": "grey", "from": "root", "to": "Machine Learning Intern", "weight": 1}, {"color": "grey", "from": "root", "to": "Student", "weight": 1}, {"color": "grey", "from": "root", "to": "Senior Research Associate", "weight": 1}, {"color": "grey", "from": "root", "to": "Head of Operations", "weight": 1}, {"color": "grey", "from": "root", "to": "Graphic Designer", "weight": 1}, {"color": "grey", "from": "root", "to": "Senior Executive", "weight": 1}, {"color": "grey", "from": "root", "to": "Assistant Professor (Sr.)", "weight": 1}, {"color": "grey", "from": "root", "to": "Senior Quality Assurance Engineer", "weight": 1}, {"color": "grey", "from": "root", "to": "Product Analyst", "weight": 1}, {"color": "grey", "from": "root", "to": "Digital Marketing Executive", "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "hierarchicalRepulsion": {
+            "centralGravity": 0.0,
+            "damping": 0.09,
+            "nodeDistance": 120,
+            "springConstant": 0.01,
+            "springLength": 100
+        },
+        "solver": "hierarchicalRepulsion",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

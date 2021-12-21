@@ -7,22 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Mon, 02 Aug 2021 11:15:58 -0400</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Dec 2021 12:14:34 +0600</lastBuildDate><atom:link href="https://ziiv-git.github.io/Ziiv/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alteryx</title>
-      <link>https://ziiv-git.github.io/Ziiv/categories/alteryx/</link>
-      <pubDate>Mon, 02 Aug 2021 11:15:58 -0400</pubDate>
+      <title>NLP</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/nlp/</link>
+      <pubDate>Mon, 20 Dec 2021 12:14:34 +0600</pubDate>
       
-      <guid>https://ziiv-git.github.io/Ziiv/categories/alteryx/</guid>
+      <guid>https://ziiv-git.github.io/Ziiv/categories/nlp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualization</title>
       <link>https://ziiv-git.github.io/Ziiv/categories/visualization/</link>
-      <pubDate>Mon, 02 Aug 2021 11:15:58 -0400</pubDate>
+      <pubDate>Mon, 20 Dec 2021 12:14:34 +0600</pubDate>
       
       <guid>https://ziiv-git.github.io/Ziiv/categories/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alteryx</title>
+      <link>https://ziiv-git.github.io/Ziiv/categories/alteryx/</link>
+      <pubDate>Mon, 02 Aug 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://ziiv-git.github.io/Ziiv/categories/alteryx/</guid>
       <description></description>
     </item>
     
@@ -59,15 +68,6 @@
       <pubDate>Sun, 11 Jul 2021 11:15:58 -0400</pubDate>
       
       <guid>https://ziiv-git.github.io/Ziiv/categories/computer-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>https://ziiv-git.github.io/Ziiv/categories/nlp/</link>
-      <pubDate>Fri, 09 Jul 2021 11:15:58 -0400</pubDate>
-      
-      <guid>https://ziiv-git.github.io/Ziiv/categories/nlp/</guid>
       <description></description>
     </item>
     
